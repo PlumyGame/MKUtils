@@ -108,7 +108,7 @@ class TintLerpLayerProcessor(
 }
 
 //Shift the colour of the layer in HSV
-class HSVLayerProcessor (val h: Int, val s: Int, val v: Int) : ILayerProcessor {
+class HSVLayerProcessor (val h: Int = 0, val s: Int = 0, val v: Int = 0) : ILayerProcessor {
     override fun process(original: ILayerView): ILayerView {
         val width = original.width
         val height = original.height
